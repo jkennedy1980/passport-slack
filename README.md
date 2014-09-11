@@ -10,7 +10,7 @@ By plugging into Passport, Slack authentication can be easily integrated into an
 
 ## Install
 
-    $ npm install passport-slack
+    $ npm install passport-slack-ponycode
 
 ## Usage
 

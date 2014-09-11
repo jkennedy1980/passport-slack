@@ -1,5 +1,5 @@
 {
-  "name": "passport-slack",
+  "name": "passport-slack-ponycode",
   "version": "0.0.1",
   "description": "Slack authentication strategy for Passport.",
   "keywords": [
