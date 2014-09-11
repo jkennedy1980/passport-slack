@@ -29,11 +29,13 @@ Slacks's [api](https://api.slack.com/applications) site.
 
     var SlackStrategy = require('./passport-slack').SlackStrategy;
     passport.use( 'slack', new SlackStrategy({
-        clientID: "2579862865.2611629190",
-        clientSecret:"c8f79343db3e4b3a28fde613ae5a0d93",
-        callbackURL: "http://localhost:3000/authenticate/callback",
-        slackTeam: "[slack team id]"
+        clientID: "[slack client id]",
+        clientSecret:"[slack client secret]",
+        callbackURL: "[host]/authenticate/callback",
+        slackTeam: "[optional slack team id to force joining a team]"
     }, function( token, tokenSecret, profile, done ){
+
+        // This is your chance to find a User in your database.
         var User = neoteric.model('User');
         User.findBySlackId( profile.id, function( error, existingUser ){
             if( error ) return done( error, false );
@@ -49,7 +51,9 @@ Slacks's [api](https://api.slack.com/applications) site.
                 });
             }
         });
+
     }));
+
 
 #### Authenticate Requests
 
