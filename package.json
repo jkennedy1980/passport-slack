@@ -1,0 +1,27 @@
+{
+  "name": "passport-slack",
+  "version": "0.0.0",
+  "description": "Slack authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "slack",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
+  "author": {
+    "name": "Joshua Kennedy",
+    "email": "",
+    "url": ""
+  },
+  "main": "./lib/index.js",
+  "dependencies": {
+    "passport-oauth": "^1.0.0",
+    "passport-strategy": "1.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "0.10.x"
+  }
+}
